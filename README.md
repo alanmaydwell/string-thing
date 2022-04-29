@@ -2,9 +2,9 @@
 
 Mainly created to practice with Python unit test frameworks **unittest** and **pyunit**
 
-Also to try out Github Actions.
+Also to try out Github Actions (/.github/workflows/)
 
-Although string_thing module might eventually be actually useful for something, e.g. used in conjunction with pyperclip module to examine or alter the clipboard contents.
+The string_thing module was created as something to try on unit tests with but it might eventually be actually useful for something, e.g. used in conjunction with pyperclip module to examine or alter the clipboard contents.
 
 ## Initial impressions of frameworks tried
 Here are some quick and superficial comparisons.
