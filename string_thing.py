@@ -49,3 +49,7 @@ def counterstring(target_length=2, marker="*"):
     # Trim as final addition can exceed target
     counter_str = counter_str[:target_length]
     return counter_str
+
+
+if __name__ == "__main__":
+    st = StringThing("axbxxcxxxd")
