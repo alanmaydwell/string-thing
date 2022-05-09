@@ -49,7 +49,21 @@ def test_substring_count_v2(value, substr, expected):
     result = st.substring_count(substr)
     assert result == expected, f"Count of {substr} in {value} found {result} but expected {expected}"
 
-    
+
+# Deliberate Exception
+def test_substring_count_invalid():
+    st = StringThing("123456")
+    with pytest.raises(TypeError):
+        st.substring_count(1)
+
+# Deliberate exception and check the error text
+def test_substring_count_invalid_v2():
+    st = StringThing("123456")
+    with pytest.raises(TypeError) as exception_info:
+        st.substring_count(1)
+    # Below needs to be outside pytest.raises context manager otherwise will always pass
+    assert "must be str, not int" == str(exception_info.value), "Expected exception text not found"
+
 
 def test_find_first():
     value = "axbxxcxxxd"
