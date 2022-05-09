@@ -19,7 +19,7 @@ jobs:
       - name: Flake8 install
         run: pip install flake8
       - name: Flake8 Run
-        run: flake8 .
+        run: flake8 --max-line-length=127 --ignore=E302 .
       - name: Run pytest checks
         run: pytest test_string_thing_pytest.py
         
